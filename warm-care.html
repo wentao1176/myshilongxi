@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="麻阳苗乡暖心家园——一站式乡村公益服务与苗乡文化宣传平台">
+  <title>暖心关爱 · 麻阳苗乡暖心家园</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./images/img.ico?v=2" type="image/x-icon">
+  <link rel="icon" href="./images/img.ico?v=2" type="image/x-icon">
+  
+</head>
+<body>
+
+  <!-- ======== 顶部导航栏 ======== -->
+  <header class="top-header">
+    <a href="./index.html" class="header-logo">
+      <span class="logo-icon">🏠</span>
+      <span>苗乡暖心家园</span>
+    </a>
+    <button class="menu-toggle" aria-label="菜单">☰</button>
+    <nav class="header-nav">
+      <a href="./" >首页</a>
+      <a href="./warm-care.html" class="active">暖心关爱</a>
+      <a href="./miaoculture.html" >苗乡文化</a>
+      <a href="./convenience.html" >便民服务</a>
+      <a href="./volunteer.html" >志愿帮扶</a>
+      <a href="./messages.html" >互动留言</a>
+      <a href="./team-style.html" >团队风貌</a>
+      
+        <a href="#" onclick="alert(\'登录功能需后端支持\')">🔑 登录</a>
+        <a href="#" onclick="alert(\'注册功能需后端支持\')">📝 注册</a>
+      
+    </nav>
+  </header>
+
+  <!-- ======== 主内容区 ======== -->
+  <main>
+    
+
+<section class="page-banner">
+  <div class="banner-icon">❤️</div>
+  <h1>暖心关爱</h1>
+  <p>聚焦留守老人 · 关爱留守儿童 · 用爱温暖苗乡</p>
+</section>
+
+<div class="breadcrumb">
+  <a href="./index.html">首页</a> <span class="sep">›</span> <strong>暖心关爱</strong>
+</div>
+
+<section class="section">
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="tab-elderly">👴👵 留守老人专区</button>
+    <button class="tab-btn" data-tab="tab-children">🧒 留守儿童专区</button>
+  </div>
+
+  <!-- ==================== 留守老人专区 ==================== -->
+  <div class="tab-content active" id="tab-elderly">
+    <div class="card" style="border-left: 5px solid var(--color-accent);">
+      <div class="card-title"><span class="card-icon">🆘</span> 一键便民拨号</div>
+      <div class="card-body">
+        <p style="margin-bottom: 1rem;">待填充：村民常用联系电话。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="card-icon">📞</span> 亲情连线</div>
+      <div class="card-body">
+        <p>待填充：视频通话教程、志愿者公益连线时段。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="card-icon">💊</span> 健康守护</div>
+      <div class="card-body">
+        <p>待填充：乡村常见疾病防治知识、卫生室信息。</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 留守儿童专区 ==================== -->
+  <div class="tab-content" id="tab-children">
+
+    <div class="card">
+      <div class="card-title"><span class="card-icon">🛡️</span> 安全科普课堂</div>
+      <div class="card-body">
+        <p>待填充：防溺水、防拐骗、居家安全、交通安全等内容。</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="card-icon">🎨</span> 趣味成长园地</div>
+      <div class="card-body">
+        <p>待填充：苗族故事、儿歌、手工教程、课业辅导。</p>
+      </div>
+    </div>
+
+    <div class="card" id="wish-wall">
+      <div class="card-title"><span class="card-icon">⭐</span> 儿童心愿墙</div>
+      <div class="card-body">
+        <p style="margin-bottom: 1rem;">孩子们的小小心愿，等待爱心人士认领帮扶。</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem;" id="wishList">
+          
+          <div class="card" style="border-left: 4px solid #FF9800;">
+            <h4>⭐ 一本成语词典</h4>
+            <p style="font-size: var(--font-sm); color: var(--color-text-light);">小芳 · 11岁 · 骆子村</p>
+            <p style="font-size: var(--font-sm);">"我学语文的时候很多成语不懂，想要一本词典帮助学习。"</p>
+            
+              <button class="btn btn-primary wish-adopt-btn" data-wish-id="4" data-wish="一本成语词典" style="margin-top: 0.5rem;">❤️ 认领心愿</button>
+            
+          </div>
+          
+          <div class="card" style="border-left: 4px solid #2196F3;">
+            <h4>⭐ 一套水彩笔</h4>
+            <p style="font-size: var(--font-sm); color: var(--color-text-light);">小军 · 7岁 · 骆子村</p>
+            <p style="font-size: var(--font-sm);">"我喜欢画画，想用彩色笔画我们村子。"</p>
+            
+              <button class="btn btn-primary wish-adopt-btn" data-wish-id="3" data-wish="一套水彩笔" style="margin-top: 0.5rem;">❤️ 认领心愿</button>
+            
+          </div>
+          
+          <div class="card" style="border-left: 4px solid #4CAF50;">
+            <h4>⭐ 一个新书包</h4>
+            <p style="font-size: var(--font-sm); color: var(--color-text-light);">小花 · 10岁 · 骆子村</p>
+            <p style="font-size: var(--font-sm);">"我的书包破了，想要一个新的。"</p>
+            
+              <button class="btn btn-primary wish-adopt-btn" data-wish-id="2" data-wish="一个新书包" style="margin-top: 0.5rem;">❤️ 认领心愿</button>
+            
+          </div>
+          
+          <div class="card" style="border-left: 4px solid #9E9E9E;">
+            <h4>⭐ 一套课外书</h4>
+            <p style="font-size: var(--font-sm); color: var(--color-text-light);">小明 · 8岁 · 骆子村</p>
+            <p style="font-size: var(--font-sm);">"我想看更多故事书，长大了要当老师。"</p>
+            
+              <button class="btn btn-outline" disabled style="margin-top: 0.5rem; opacity: 0.7;">✅ 已被认领</button>
+            
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title"><span class="card-icon">💌</span> 云端家书</div>
+      <div class="card-body">
+        <p>待填充：外出务工家长录制的语音、视频家书。</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+  </main>
+
+  <!-- ======== 页脚 ======== -->
+  <footer class="site-footer">
+    <div class="footer-brand">🏡 麻阳苗乡暖心家园</div>
+    <p>多彩麻阳 · 同心家园 · 大桥江乡 · 石垅溪村</p>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./warm-care.html">暖心关爱</a>
+      <a href="./miaoculture.html">苗乡文化</a>
+      <a href="./convenience.html">便民服务</a>
+      <a href="./volunteer.html">志愿帮扶</a>
+      <a href="./messages.html">互动留言</a>
+      <a href="./team-style.html">团队风貌</a>
+    </div>
+    <p style="margin-top: 1rem; opacity: 0.6;">&copy; 2026 三下乡社会实践团队 · 麻阳苗乡暖心家园公益项目</p>
+  </footer>
+
+  <!-- 字体大小切换 -->
+  <button class="font-size-toggle" title="切换大字体" aria-label="切换大字体">A+</button>
+  <!-- 回到顶部 -->
+  <button class="scroll-top-btn" title="回到顶部" aria-label="回到顶部">⬆</button>
+
+  <script src="./js/main.js"></script>
+  
+<script>
+document.querySelectorAll('.wish-adopt-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    var wishId = this.getAttribute('data-wish-id');
+    var wishTitle = this.getAttribute('data-wish');
+    
+    if (confirm('您需要先登录才能认领心愿。是否前往登录？')) {
+      window.location.href = '/login';
+    }
+    
+  });
+});
+</script>
+
+</body>
+</html>

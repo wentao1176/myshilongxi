@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="麻阳苗乡暖心家园——一站式乡村公益服务与苗乡文化宣传平台">
+  <title>互动留言 · 麻阳苗乡暖心家园</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./images/img.ico?v=2" type="image/x-icon">
+  <link rel="icon" href="./images/img.ico?v=2" type="image/x-icon">
+  
+</head>
+<body>
+
+  <!-- ======== 顶部导航栏 ======== -->
+  <header class="top-header">
+    <a href="./index.html" class="header-logo">
+      <span class="logo-icon">🏠</span>
+      <span>苗乡暖心家园</span>
+    </a>
+    <button class="menu-toggle" aria-label="菜单">☰</button>
+    <nav class="header-nav">
+      <a href="./" >首页</a>
+      <a href="./warm-care.html" >暖心关爱</a>
+      <a href="./miaoculture.html" >苗乡文化</a>
+      <a href="./convenience.html" >便民服务</a>
+      <a href="./volunteer.html" >志愿帮扶</a>
+      <a href="./messages.html" class="active">互动留言</a>
+      <a href="./team-style.html" >团队风貌</a>
+      
+        <a href="#" onclick="alert(\'登录功能需后端支持\')">🔑 登录</a>
+        <a href="#" onclick="alert(\'注册功能需后端支持\')">📝 注册</a>
+      
+    </nav>
+  </header>
+
+  <!-- ======== 主内容区 ======== -->
+  <main>
+    
+
+<section class="page-banner">
+  <div class="banner-icon">💬</div>
+  <h1>互动留言</h1>
+  <p>双向沟通 · 暖心联动</p>
+</section>
+
+<div class="breadcrumb">
+  <a href="./index.html">首页</a> <span class="sep">›</span> <strong>互动留言</strong>
+</div>
+
+<section class="section">
+
+  <div class="tabs">
+    <button class="tab-btn active" data-tab="tab-help">🆘 求助留言</button>
+    <button class="tab-btn" data-tab="tab-voice">💌 乡音寄语</button>
+    <button class="tab-btn" data-tab="tab-talent">🎨 才艺展示</button>
+    <button class="tab-btn" data-tab="tab-feedback">💡 建议反馈</button>
+  </div>
+
+  <!-- ==================== 求助留言 ==================== -->
+  <div class="tab-content active" id="tab-help">
+    <div class="card">
+      <div class="card-title"><span class="card-icon">🆘</span> 求助留言</div>
+      <div class="card-body">
+        <p style="margin-bottom: 1rem;">老人、儿童、村民可随时提交生活困难、健康问题、帮扶需求，后台实时接收、跟进回复。</p>
+
+        <div style="margin-bottom: 1.5rem;" id="helpList">
+          <h4 style="margin-bottom: 0.75rem;">📋 近期求助</h4>
+          
+          <div class="card" style="background: var(--color-bg-alt); border-left: 4px solid var(--color-primary-light); margin-bottom: 0.5rem;">
+            <p style="font-weight: 600;">"家里水管漏水，需要维修帮助"</p>
+            <p style="font-size: var(--font-sm); color: var(--color-text-light);">—— 张大爷 · 06月03日</p>
+            
+          </div>
+          
+          <div class="card" style="background: var(--color-bg-alt); border-left: 4px solid var(--color-warning); margin-bottom: 0.5rem;">
+            <p style="font-weight: 600;">"孩子最近咳嗽得厉害，村卫生室开的药吃了不见好。"</p>
+            <p style="font-size: var(--font-sm); color: var(--color-text-light);">—— 杨大姐 · 06月03日</p>
+            
+            <p style="font-size: var(--font-sm); color: var(--color-success); margin-top: 0.5rem;">
+              ⏳ 已联系村医上门复诊，跟进中。
+            </p>
+            
+          </div>
+          
+          <div class="card" style="background: var(--color-bg-alt); border-left: 4px solid var(--color-success); margin-bottom: 0.5rem;">
+            <p style="font-weight: 600;">"家里电线老化了，经常跳闸，需要人帮忙看一下。"</p>
+            <p style="font-size: var(--font-sm); color: var(--color-text-light);">—— 刘奶奶 · 06月03日</p>
+            
+            <p style="font-size: var(--font-sm); color: var(--color-success); margin-top: 0.5rem;">
+              ✅ 志愿者已上门维修，5月26日解决。
+            </p>
+            
+          </div>
+          
+        </div>
+
+        <h4 style="margin-bottom: 0.75rem;">✍️ 提交新求助</h4>
+        <form id="helpForm">
+          <div class="form-group">
+            <label class="form-label" for="helpName">您的姓名</label>
+            <input type="text" id="helpName" class="form-input" placeholder="请输入您的姓名" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="helpPhone">联系电话</label>
+            <input type="tel" id="helpPhone" class="form-input" placeholder="方便我们联系您" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="helpType">求助类型</label>
+            <select id="helpType" class="form-select">
+              <option value="">请选择求助类型</option>
+              <option value="life">生活困难</option>
+              <option value="health">健康问题</option>
+              <option value="repair">家电/房屋维修</option>
+              <option value="document">证件/手续办理</option>
+              <option value="other">其他</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="helpContent">求助内容</label>
+            <textarea id="helpContent" class="form-textarea" placeholder="请详细描述您遇到的困难……" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-large btn-block">📤 提交求助</button>
+        </form>
+        <div id="helpSubmitSuccess" style="display: none; margin-top: 1rem;" class="notice-bar">
+          ✅ 您的求助已成功提交！志愿者会尽快与您联系。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 乡音寄语 ==================== -->
+  <div class="tab-content" id="tab-voice">
+    <div class="card">
+      <div class="card-title"><span class="card-icon">💌</span> 乡音寄语</div>
+      <div class="card-body">
+        <p style="margin-bottom: 1.25rem;">村民、在外游子留言寄语，分享家乡故事、抒发思乡之情。</p>
+
+        <div style="display: grid; gap: 1rem; margin-bottom: 1.5rem;" id="voiceList">
+          
+          <div class="card" style="background: var(--color-bg-alt);">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 2rem;">👤</span>
+              <div>
+                <strong>在外的游子</strong>
+                <span style="font-size: var(--font-xs); color: var(--color-text-light); margin-left: 0.5rem;">来自 上海</span>
+              </div>
+            </div>
+            <p>"想念家乡的味道，想念苗乡的山山水水"</p>
+            <p style="font-size: var(--font-xs); color: var(--color-text-light); margin-top: 0.5rem;">2026年06月03日 · 👍 0人点赞</p>
+          </div>
+          
+          <div class="card" style="background: var(--color-bg-alt);">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 2rem;">👤</span>
+              <div>
+                <strong>田婶</strong>
+                <span style="font-size: var(--font-xs); color: var(--color-text-light); margin-left: 0.5rem;">来自 骆子村本地</span>
+              </div>
+            </div>
+            <p>"今年的冰糖橙长势很好，欢迎大家秋天来村里品尝。也谢谢三下乡的孩子们，帮了我们很多忙！"</p>
+            <p style="font-size: var(--font-xs); color: var(--color-text-light); margin-top: 0.5rem;">2026年06月03日 · 👍 12人点赞</p>
+          </div>
+          
+          <div class="card" style="background: var(--color-bg-alt);">
+            <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+              <span style="font-size: 2rem;">👤</span>
+              <div>
+                <strong>阿龙</strong>
+                <span style="font-size: var(--font-xs); color: var(--color-text-light); margin-left: 0.5rem;">来自 广东深圳</span>
+              </div>
+            </div>
+            <p>"离开骆子村十年了，每次看到家乡的照片都想哭。想念村口的老槐树，想念阿妈的酸汤鱼。今年过年一定回来！"</p>
+            <p style="font-size: var(--font-xs); color: var(--color-text-light); margin-top: 0.5rem;">2026年06月03日 · 👍 18人点赞</p>
+          </div>
+          
+        </div>
+
+        <h4 style="margin-bottom: 0.75rem;">✍️ 写下您的寄语</h4>
+        <form id="voiceForm">
+          <div class="form-group">
+            <label class="form-label" for="voiceName">您的称呼</label>
+            <input type="text" id="voiceName" class="form-input" placeholder="请输入您的称呼">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="voiceFrom">所在地</label>
+            <input type="text" id="voiceFrom" class="form-input" placeholder="如：石垅溪村 / 广东深圳">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="voiceContent">寄语内容</label>
+            <textarea id="voiceContent" class="form-textarea" placeholder="分享您对家乡的思念、祝福、故事……"></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary btn-large btn-block">💌 发布寄语</button>
+        </form>
+        <div id="voiceSubmitSuccess" style="display: none; margin-top: 1rem;" class="notice-bar">
+          ✅ 您的寄语已发布！
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 才艺展示 ==================== -->
+  <div class="tab-content" id="tab-talent">
+    <div class="card">
+      <div class="card-title"><span class="card-icon">🎨</span> 才艺展示</div>
+      <div class="card-body">
+        <p style="margin-bottom: 1.25rem;">留守儿童绘画、手工、苗歌演唱等作品展示平台。</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem;" id="talentList">
+          
+          <p style="color: var(--color-text-light); text-align: center;">暂无才艺作品，敬请期待。</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 建议反馈 ==================== -->
+  <div class="tab-content" id="tab-feedback">
+    <div class="card">
+      <div class="card-title"><span class="card-icon">💡</span> 建议反馈</div>
+      <div class="card-body">
+        <p style="margin-bottom: 1.25rem;">便民服务、文化建设、帮扶工作的优化建议，共建美好家园。</p>
+
+        <form id="feedbackForm">
+          <div class="form-group">
+            <label class="form-label" for="fbName">您的姓名（选填）</label>
+            <input type="text" id="fbName" class="form-input" placeholder="可匿名提交">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fbType">反馈类型</label>
+            <select id="fbType" class="form-select">
+              <option value="">请选择反馈类型</option>
+              <option value="service">便民服务建议</option>
+              <option value="culture">文化建设建议</option>
+              <option value="volunteer">帮扶工作建议</option>
+              <option value="website">网站改进建议</option>
+              <option value="other">其他</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="fbContent">您的建议</label>
+            <textarea id="fbContent" class="form-textarea" placeholder="请畅所欲言，每一条建议我们都会认真对待……" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-large btn-block">💡 提交建议</button>
+        </form>
+        <div id="fbSubmitSuccess" style="display: none; margin-top: 1rem;" class="notice-bar">
+          ✅ 感谢您的建议！我们会认真考虑。
+        </div>
+
+        <hr class="divider">
+
+        <h4 style="margin-bottom: 0.75rem;">📋 近期建议</h4>
+        
+        <div class="card" style="background: var(--color-bg-alt); border-left: 4px solid var(--color-success); margin-bottom: 0.5rem;">
+          <p style="font-weight: 600;">"希望网站上能加一个天气预报，方便我们下地干活前查看。"</p>
+          <p style="font-size: var(--font-sm); color: var(--color-text-light);">—— 张大爷 · 06月03日</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</section>
+
+  </main>
+
+  <!-- ======== 页脚 ======== -->
+  <footer class="site-footer">
+    <div class="footer-brand">🏡 麻阳苗乡暖心家园</div>
+    <p>多彩麻阳 · 同心家园 · 大桥江乡 · 石垅溪村</p>
+    <div class="footer-links">
+      <a href="./index.html">首页</a>
+      <a href="./warm-care.html">暖心关爱</a>
+      <a href="./miaoculture.html">苗乡文化</a>
+      <a href="./convenience.html">便民服务</a>
+      <a href="./volunteer.html">志愿帮扶</a>
+      <a href="./messages.html">互动留言</a>
+      <a href="./team-style.html">团队风貌</a>
+    </div>
+    <p style="margin-top: 1rem; opacity: 0.6;">&copy; 2026 三下乡社会实践团队 · 麻阳苗乡暖心家园公益项目</p>
+  </footer>
+
+  <!-- 字体大小切换 -->
+  <button class="font-size-toggle" title="切换大字体" aria-label="切换大字体">A+</button>
+  <!-- 回到顶部 -->
+  <button class="scroll-top-btn" title="回到顶部" aria-label="回到顶部">⬆</button>
+
+  <script src="./js/main.js"></script>
+  
+<script>
+function setupForm(formId, apiUrl, successId) {
+  var form = document.getElementById(formId);
+  if (!form) return;
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var submitBtn = form.querySelector('button[type="submit"]');
+    var originalText = submitBtn.textContent;
+    submitBtn.textContent = '提交中...';
+    submitBtn.disabled = true;
+
+    var payload = {};
+    if (formId === 'helpForm') {
+      payload = { name: document.getElementById('helpName').value, phone: document.getElementById('helpPhone').value, help_type: document.getElementById('helpType').value, content: document.getElementById('helpContent').value };
+    } else if (formId === 'voiceForm') {
+      payload = { msg_type: 'voice', author_name: document.getElementById('voiceName').value, location: document.getElementById('voiceFrom').value, content: document.getElementById('voiceContent').value };
+    } else if (formId === 'feedbackForm') {
+      payload = { msg_type: 'feedback', author_name: document.getElementById('fbName').value, location: '', content: document.getElementById('fbContent').value };
+    }
+
+    var endpoint = apiUrl;
+    if (formId === 'helpForm') endpoint = '#help-requests';
+    else if (formId === 'voiceForm' || formId === 'feedbackForm') endpoint = '#messages';
+
+    fetch(endpoint, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(payload)
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+      if (data.ok) {
+        var successEl = document.getElementById(successId);
+        if (successEl) { successEl.style.display = 'block'; setTimeout(function() { successEl.style.display = 'none'; }, 4000); }
+        form.reset();
+        setTimeout(function() { location.reload(); }, 1500);
+      } else {
+        alert('提交失败：' + (data.error || '请检查填写内容'));
+      }
+    })
+    .catch(function() { alert('网络错误，请稍后再试'); })
+    .finally(function() {
+      submitBtn.textContent = originalText;
+      submitBtn.disabled = false;
+    });
+  });
+}
+
+setupForm('helpForm', '#help-requests', 'helpSubmitSuccess');
+setupForm('voiceForm', '#messages', 'voiceSubmitSuccess');
+setupForm('feedbackForm', '#messages', 'fbSubmitSuccess');
+</script>
+
+</body>
+</html>
