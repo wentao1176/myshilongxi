@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="麻阳苗乡暖心家园——一站式乡村公益服务与苗乡文化宣传平台">
+  <title>支教第二天 & 苗医拜访 · 团队风貌 · 麻阳苗乡暖心家园</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../images/img.ico?v=2" type="image/x-icon">
+  <link rel="icon" href="../images/img.ico?v=2" type="image/x-icon">
+
+<style>
+  .episode-header {
+    background: linear-gradient(135deg, #4E342E 0%, #5D4037 40%, #6D4C41 100%);
+    color: #fff; padding: 3.5rem 1.5rem;
+    text-align: center; position: relative; overflow: hidden;
+  }
+  .episode-header::before {
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='3' fill='rgba(255,255,255,0.06)'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+  .episode-header .episode-badge {
+    position: relative; display: inline-block;
+    background: rgba(255,255,255,0.18); padding: 0.3rem 1.2rem;
+    border-radius: 20px; font-size: var(--font-xs); margin-bottom: 1rem;
+    backdrop-filter: blur(4px);
+  }
+  .episode-header h1 {
+    font-size: 2rem; margin: 0.5rem 0; position: relative;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.25); font-weight: 700;
+  }
+  .episode-header p { position: relative; text-shadow: 0 1px 6px rgba(0,0,0,0.2); }
+  .episode-header .episode-date { position: relative; opacity: 0.85; font-size: var(--font-sm); }
+
+  .content-section { max-width: var(--max-width); margin: 0 auto; padding: 2rem 1rem; }
+  .content-section h2 {
+    font-size: 1.4rem; margin: 2rem 0 0.75rem;
+    color: #5D4037; border-left: 4px solid #8D6E63; padding-left: 1rem;
+  }
+  .content-section h3 { font-size: 1.1rem; margin: 1.25rem 0 0.5rem; color: #4E342E; }
+  .content-section p { line-height: 2; font-size: var(--font-md); color: #444; text-indent: 2em; margin-bottom: 1rem; }
+
+  .highlight-box {
+    background: linear-gradient(135deg, #EFEBE9 0%, #F5F0ED 100%);
+    border-left: 4px solid #8D6E63; padding: 1.5rem;
+    border-radius: 0 12px 12px 0; margin: 1.5rem 0;
+  }
+  .highlight-box p { text-indent: 0; font-size: var(--font-md); color: #4E342E; margin: 0; }
+
+  .tag-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; justify-content: center; }
+  .tag-row .tag {
+    background: #F5F0ED; color: #5D4037; padding: 0.3rem 0.9rem;
+    border-radius: 14px; font-size: var(--font-sm); border: 1px solid #D7CCC8;
+  }
+
+  .img-card {
+    margin: 1rem 0;
+  }
+  .img-card img {
+    display: block; max-width: 100%; border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15); margin: 0 auto;
+  }
+  .img-card .img-caption {
+    text-align: center; font-size: var(--font-xs); color: var(--color-text-light);
+    margin-top: 0.5rem;
+  }
+
+  .img-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem; margin: 1rem 0;
+  }
+  .img-grid img {
+    display: block; width: 100%; border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  }
+
+  .interview-qa {
+    margin: 1rem 0;
+  }
+  .interview-qa .qa-item {
+    margin-bottom: 1rem; padding: 0.75rem 1rem;
+    background: #FAFAFA; border-radius: 8px; border-left: 3px solid #8D6E63;
+  }
+  .interview-qa .qa-q {
+    font-weight: 700; color: #5D4037; font-size: var(--font-md); margin-bottom: 0.3rem;
+  }
+  .interview-qa .qa-a {
+    font-size: var(--font-md); color: #555; line-height: 1.9;
+  }
+
+  .quote-block {
+    background: linear-gradient(135deg, #EFEBE9, #F5F0ED);
+    padding: 1.25rem 1.5rem; border-radius: 12px; margin: 1rem 0;
+    font-style: italic; color: #5D4037; text-align: center;
+    font-size: var(--font-md); line-height: 2;
+    border: 1px solid #D7CCC8;
+  }
+</style>
+
+</head>
+<body>
+
+  <!-- ======== 顶部导航栏 ======== -->
+  <header class="top-header">
+    <a href="../index.html" class="header-logo">
+      <span class="logo-icon">🏠</span>
+      <span>苗乡暖心家园</span>
+    </a>
+    <button class="menu-toggle" aria-label="菜单">☰</button>
+    <nav class="header-nav">
+      <a href="../" >首页</a>
+      <a href="../warm-care.html" >暖心关爱</a>
+      <a href="../miaoculture.html" >苗乡文化</a>
+      <a href="../convenience.html" >便民服务</a>
+      <a href="../volunteer.html" >志愿帮扶</a>
+      <a href="../messages.html" >互动留言</a>
+      <a href="../team-style.html" >团队风貌</a>
+    </nav>
+  </header>
+
+  <!-- ======== 主内容区 ======== -->
+  <main>
+
+
+<div class="episode-header">
+  <div class="episode-badge">📺 第 5 期</div>
+  <h1>支教第二天 & 苗医拜访</h1>
+  <p style="margin-top: 1rem; opacity: 0.9; font-size: var(--font-md);">党课铸魂，安全教育护童心；画笔绘村，苗医问道续薪火。</p>
+  <div class="episode-date">2026-07-22</div>
+</div>
+
+<div class="breadcrumb" style="max-width: var(--max-width); margin: 0 auto; padding: 0 1rem;">
+  <a href="../index.html">首页</a> <span class="sep">›</span>
+  <a href="../team-style.html">团队风貌</a> <span class="sep">›</span>
+  <strong>支教第二天 & 苗医拜访</strong>
+</div>
+
+<div class="content-section">
+
+  <h2>🏫 上午：党课引领 · 安全教育</h2>
+  <p>支教第二天的清晨，石垅溪村的阳光格外明亮。龙书记为队员们讲授了一堂生动的党课，从基层党建到乡村振兴，从党员初心到青年使命，谆谆话语让大家深受触动。</p>
+
+  <div class="img-card">
+    <img src="../uploads/Day2%E6%94%AF%E6%95%99%2B%E8%8B%97%E5%8C%BB/pic/%E5%9C%BA%E6%99%AF%E5%9B%BE.jpeg" alt="石垅溪村活动场景" loading="lazy">
+    <p class="img-caption">🏡 石垅溪村活动场景</p>
+  </div>
+
+  <div class="img-card">
+    <img src="../uploads/Day2%E6%94%AF%E6%95%99%2B%E8%8B%97%E5%8C%BB/pic/%E5%85%9A%E8%AF%BE%E6%9C%9F%E9%97%B4%E9%9B%86%E4%BD%93%E5%94%B1%E5%9B%BD%E6%AD%8C1.jpeg" alt="党课期间集体唱国歌" loading="lazy">
+    <p class="img-caption">🎵 党课期间集体唱国歌</p>
+  </div>
+
+  <p>党课之后，五人小队为29位小朋友带来了一堂防溺水安全教育课。夏季是溺水事故高发期，队员们用通俗易懂的语言向孩子们讲解水域安全知识，过程中穿插了许多趣味知识小游戏，让孩子们在欢乐中掌握关键时刻能救命的安全常识。</p>
+
+  <div class="img-grid">
+    <div class="img-card">
+      <img src="../uploads/Day2%E6%94%AF%E6%95%99%2B%E8%8B%97%E5%8C%BB/pic/%E9%98%B2%E6%BA%BA%E6%B0%B4%E6%95%99%E8%82%B2%E8%AE%B2%E8%A7%A3.jpg" alt="防溺水教育讲解" loading="lazy">
+      <p class="img-caption">🏊 防溺水安全教育讲解</p>
+    </div>
+    <div class="img-card">
+      <img src="../uploads/Day2%E6%94%AF%E6%95%99%2B%E8%8B%97%E5%8C%BB/pic/%E8%AE%B2%E8%A7%A3%E9%98%B2%E6%BA%BA%E6%B0%B4.jpeg" alt="讲解防溺水知识" loading="lazy">
+      <p class="img-caption">📋 队员耐心讲解防溺水知识</p>
+    </div>
+  </div>
+
+  <p>安全教育课后，队员们为孩子们放映了红色主题教育动画片《那年那兔那些事儿》。动画以生动有趣的方式讲述中国近现代历史，孩子们看得津津有味，在笑声与感动中悄然种下了爱国的种子。</p>
+
+  <h2>🎨 下午：我心中的石垅溪村</h2>
+  <p>午后时光，队员们组织了一场特别的绘画活动——"我心中的石垅溪村是什么样的"。孩子们拿起画笔，用最纯真的视角描绘自己的家乡：青山绿水、石板小路、门前的大黄狗、村口的老槐树……一幅幅稚嫩却真挚的画作，就是他们对家园最朴素的热爱。</p>
+
+  <div class="img-card">
+    <img src="../uploads/Day2%E6%94%AF%E6%95%99%2B%E8%8B%97%E5%8C%BB/pic/%E5%BC%80%E5%A7%8B%E2%80%9C%E6%88%91%E5%BF%83%E4%B8%AD%E7%9A%84%E7%9F%B3%E5%9E%85%E6%BA%AA%E6%9D%91%E2%80%9D%E7%BB%98%E7%94%BB.jpg" alt="开始绘画创作" loading="lazy">
+    <p class="img-caption">🖌️ 孩子们开始描绘心中的家乡</p>
+  </div>
+
+  <div class="img-grid">
+    <div class="img-card">
+      <img src="../uploads/Day2%E6%94%AF%E6%95%99%2B%E8%8B%97%E5%8C%BB/pic/%E9%98%9F%E5%91%98%E6%8C%87%E5%AF%BC%E5%AD%A9%E5%AD%90%E7%94%BB%E7%94%BB.jpg" alt="队员指导孩子画画" loading="lazy">
+      <p class="img-caption">✏️ 队员细心指导</p>
+    </div>
+    <div class="img-card">
+      <img src="../uploads/Day2%E6%94%AF%E6%95%99%2B%E8%8B%97%E5%8C%BB/pic/%E9%98%9F%E5%91%98%E6%8C%87%E5%AF%BC%E5%AD%A9%E5%AD%90%E7%94%BB%E7%94%BB2.jpg" alt="队员指导孩子画画" loading="lazy">
+      <p class="img-caption">🤝 一对一陪伴创作</p>
+    </div>
+    <div class="img-card">
+      <img src="../uploads/Day2%E6%94%AF%E6%95%99%2B%E8%8B%97%E5%8C%BB/pic/%E9%98%9F%E5%91%98%E6%8C%87%E5%AF%BC%E5%AD%A9%E5%AD%90%E7%94%BB%E7%94%BB3.jpg" alt="队员指导孩子画画" loading="lazy">
+      <p class="img-caption">🎨 画笔下的童真世界</p>
+    </div>
+  </div>
+
+  <div class="img-card">
+    <img src="../uploads/Day2%E6%94%AF%E6%95%99%2B%E8%8B%97%E5%8C%BB/pic/%E6%9C%80%E7%BB%88%E5%85%A8%E4%BD%93%E5%AD%A9%E5%AD%90%E5%B1%95%E7%A4%BA%E7%BB%98%E7%94%BB%E6%88%90%E6%9E%9C.jpg" alt="全体孩子展示绘画成果" loading="lazy">
+    <p class="img-caption">🌟 孩子们骄傲地展示自己的作品</p>
+  </div>
+
+  <p>当所有孩子举起画作的那一刻，教室变成了一座小小的美术馆。每一张画都是一个独一无二的视角，汇聚在一起，就是石垅溪村最完整的童年记忆。</p>
+
+  <div class="highlight-box">
+    <p>🎨 29个孩子，29幅画作，29种对家乡的理解——石垅溪村的明天，正在这些稚嫩的笔触中悄悄生长。</p>
+  </div>
+
+  <h2>🌿 苗医拜访：第五代传人的坚守</h2>
+  <p>绘画活动结束后，队员们拜访了当地一位德高望重的苗医——龙爷爷。龙爷爷今年已八十多岁，是苗医第五代传人，行医五十四年，也是一位有着54年党龄的老党员。</p>
+
+  <div class="img-grid">
+    <div class="img-card">
+      <img src="../uploads/Day2%E6%94%AF%E6%95%99%2B%E8%8B%97%E5%8C%BB/pic/%E8%8B%97%E5%8C%BB%E7%88%B7%E7%88%B7%E8%AE%BF%E8%B0%88.jpg" alt="苗医爷爷访谈" loading="lazy">
+      <p class="img-caption">👴 队员们与苗医龙爷爷促膝长谈</p>
+    </div>
+    <div class="img-card">
+      <img src="../uploads/Day2%E6%94%AF%E6%95%99%2B%E8%8B%97%E5%8C%BB/pic/%E8%8B%97%E5%8C%BB%E9%94%A6%E6%97%97.jpg" alt="苗医锦旗" loading="lazy">
+      <p class="img-caption">🏅 龙爷爷收到的锦旗——妙手仁心</p>
+    </div>
+  </div>
+
+  <div class="quote-block">
+    "我们这一脉苗医已经传到第五代了。苗医手艺必须一代代传下去，如果断了传承，这套医术慢慢就会彻底消失，后人再也不会了解。"
+  </div>
+
+  <h3>📋 访谈精华</h3>
+
+  <div class="interview-qa">
+    <div class="qa-item">
+      <div class="qa-q">❓ 苗医如何看病？</div>
+      <div class="qa-a">先问病人哪里疼、哪里不舒服，把症状说清楚，再对症配药。患者可以带医院化验单来，但机器检查结果只能做参考，不能完全作为治病依据。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q">❓ 药材从哪里来？</div>
+      <div class="qa-a">腿脚方便时上山采摘野生草药——"我们治病用的不只是山上野生草药，还有各类配伍中药材"。现在山路太难走，腿脚不便时就去城里中药店抓药。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q">❓ 苗医和西医有什么区别？</div>
+      <div class="qa-a">苗医侧重全身整体调理，见效周期长；西医西药直接针对病灶缓解症状，起效快。龙爷爷认为二者各有优势，不会单一依靠其中一种。苗医主要擅长医院难以根治的疑难杂症和各类重症。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q">❓ 传承面临什么困难？</div>
+      <div class="qa-a">村内年轻人大多外出务工，儿子和儿媳妇常年不在家，目前只有孙子在跟着学习苗医。懂草药的人越来越少，"如果断了传承，这套医术就会慢慢消失"。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q">❓ 有什么日常养生秘诀？</div>
+      <div class="qa-a">龙爷爷特别推荐了白醋泡生鸡蛋的调理方：选用湖南本地酿造白醋、粮食散养土鸡蛋，密封浸泡两天两夜，分七天服用，每日饭后半小时一次。搭配纯正蜂蜜效果更佳。他强调："所有养生材料都要用原生态天然的才行，市面上很多蜂蜜是白糖熬的假蜜，完全没有调理效果。"</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q">❓ 失眠、偏头痛怎么调理？</div>
+      <div class="qa-a">失眠大多是"思虑过多，心里装事，放宽心思少想事情就能睡着"，长期熬夜刷手机对身体的伤害很大。偏头痛可以服用三七粉调理。</div>
+    </div>
+    <div class="qa-item">
+      <div class="qa-q">❓ 行医五十多年，身体怎么样？</div>
+      <div class="qa-a">龙爷爷说自己"八十多岁，行医五十四年，身体几乎没出过大病，只有些无关紧要的小毛病"。访谈时还有一位76岁的本地老人，队员们感叹——完全看不出来，看着特别精神。</div>
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <p>💊 龙爷爷分享了一个真实的案例：之前有位病人，前后花费九万多都没治好，找到他调理之后完全痊愈。贵州铜仁医院的医生家属都很认可他的方子。这或许就是苗医的价值所在——在主流医疗体系之外，守护着一方百姓的健康。</p>
+  </div>
+
+  <h2>🌱 途中偶遇：吊瓜子培育基地</h2>
+  <p>拜访苗医的途中，队员们路过当地的吊瓜子培育基地。在副书记的介绍下，大家简单了解了吊瓜子的培育情况。从种植到采收，从传统农耕到现代培育技术，这片土地上的每一颗吊瓜子，都承载着村民对美好生活的期待。</p>
+
+  <div class="tag-row">
+    <span class="tag">🏫 党课铸魂</span>
+    <span class="tag">🏊 防溺水安全教育</span>
+    <span class="tag">🎬 那年那兔那些事儿</span>
+    <span class="tag">🎨 我心中的石垅溪村</span>
+    <span class="tag">🌿 苗医五代传承</span>
+    <span class="tag">💊 白醋泡蛋养生方</span>
+    <span class="tag">👴 54年党龄老党员</span>
+    <span class="tag">🌱 吊瓜子培育基地</span>
+  </div>
+
+  <p style="text-indent: 0; font-weight: 600; color: #5D4037;">从党课到安全课，从画笔到苗医——支教第二天，我们和孩子们一起学习、一起创造，也从老一辈手中接过了一束需要用心呵护的文化薪火。</p>
+
+</div>
+
+  </main>
+
+  <!-- ======== 页脚 ======== -->
+  <footer class="site-footer">
+    <div class="footer-brand">🏡 麻阳苗乡暖心家园</div>
+    <p>多彩麻阳 · 同心家园 · 大桥江乡 · 石垅溪村</p>
+    <div class="footer-links">
+      <a href="../index.html">首页</a>
+      <a href="../warm-care.html">暖心关爱</a>
+      <a href="../miaoculture.html">苗乡文化</a>
+      <a href="../convenience.html">便民服务</a>
+      <a href="../volunteer.html">志愿帮扶</a>
+      <a href="../messages.html">互动留言</a>
+      <a href="../team-style.html">团队风貌</a>
+    </div>
+    <p style="margin-top: 1rem; opacity: 0.6;">&copy; 2026 三下乡社会实践团队 · 麻阳苗乡暖心家园公益项目</p>
+  </footer>
+
+  <!-- 字体大小切换 -->
+  <button class="font-size-toggle" title="切换大字体" aria-label="切换大字体">A+</button>
+  <!-- 回到顶部 -->
+  <button class="scroll-top-btn" title="回到顶部" aria-label="回到顶部">⬆</button>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
