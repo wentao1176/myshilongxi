@@ -194,6 +194,196 @@
     </div>
   </section>
 
+  <!-- ======== 石垅溪村介绍 ======== -->
+  <style>
+    .village-intro { max-width: var(--max-width); margin: 0 auto; padding: 2rem 1rem; }
+
+    /* ── 大标题横幅 ── */
+    .village-hero {
+      background: linear-gradient(135deg, #2E5A2E 0%, #3D6B3D 30%, #5A8A5A 70%, #6B9B6B 100%);
+      color: #fff; padding: 2.5rem 1.5rem; text-align: center;
+      border-radius: 16px; position: relative; overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    .village-hero::before {
+      content: ''; position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 3 L35 18 L50 18 L38 28 L43 43 L30 33 L17 43 L22 28 L10 18 L25 18 Z' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .village-hero h2 { color: #fff; font-size: 1.6rem; margin: 0; position: relative; }
+    .village-hero .hero-sub { margin-top: 0.5rem; opacity: 0.85; font-size: var(--font-md); position: relative; }
+
+    /* ── 数字亮点 ── */
+    .village-stats {
+      display: grid; grid-template-columns: repeat(5, 1fr);
+      gap: 0.75rem; margin-bottom: 2rem;
+    }
+    @media (max-width: 750px) { .village-stats { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 450px) { .village-stats { grid-template-columns: repeat(2, 1fr); } }
+    .village-stats .stat-item {
+      background: linear-gradient(135deg, #F1F8F1, #E8F5E9);
+      border-radius: 12px; padding: 1rem 0.5rem; text-align: center;
+      border: 1px solid #C8E6C9;
+    }
+    .village-stats .stat-num { font-size: 1.6rem; font-weight: 800; color: #2E5A2E; line-height: 1.2; }
+    .village-stats .stat-label { font-size: var(--font-xs); color: #5D7A5D; margin-top: 0.25rem; }
+
+    /* ── 分区卡片 ── */
+    .village-card {
+      background: #fff; border-radius: 14px; padding: 1.5rem;
+      margin-bottom: 1.25rem; box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      border-left: 4px solid #5A8A5A;
+    }
+    .village-card .vc-header { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; }
+    .village-card .vc-icon { font-size: 1.5rem; }
+    .village-card .vc-title { font-size: 1.15rem; font-weight: 700; color: #2E5A2E; }
+    .village-card p { line-height: 2; font-size: var(--font-md); color: #444; text-indent: 2em; margin-bottom: 0.5rem; }
+
+    /* ── 亮点卡片（带背景） ── */
+    .village-highlight {
+      background: linear-gradient(135deg, #F1F8F1 0%, #E8F5E9 100%);
+      border: 1px solid #C8E6C9; border-radius: 14px;
+      padding: 1.25rem 1.5rem; margin: 1.25rem 0;
+    }
+    .village-highlight .vh-title { font-weight: 700; color: #2E5A2E; font-size: var(--font-md); margin-bottom: 0.5rem; }
+    .village-highlight p { text-indent: 0; font-size: var(--font-md); color: #3D5A3D; line-height: 1.9; margin: 0; }
+
+    /* ── 产业网格 ── */
+    .industry-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem; margin: 1rem 0;
+    }
+    .industry-item {
+      background: #FAFCFA; border-radius: 12px; padding: 1.25rem;
+      border: 1px solid #DFEBDF; text-align: center;
+    }
+    .industry-item .ind-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .industry-item h4 { color: #2E5A2E; margin: 0 0 0.4rem; font-size: var(--font-md); }
+    .industry-item p { font-size: var(--font-sm); color: #555; line-height: 1.8; text-indent: 0; margin: 0; }
+  </style>
+
+  <section class="section">
+    <div class="village-intro">
+
+      <!-- ── 标题横幅 ── -->
+      <div class="village-hero">
+        <h2>🏔️ 石垅溪村 · 西晃山下的苗乡明珠</h2>
+        <p class="hero-sub">湖南省怀化市麻阳苗族自治县大桥江乡 · 雪峰山余脉 · 天然富硒农耕区</p>
+      </div>
+
+      <!-- ── 关键数字 ── -->
+      <div class="village-stats">
+        <div class="stat-item">
+          <div class="stat-num">800<span style="font-size:1rem;">+</span>年</div>
+          <div class="stat-label">🏘️ 龙姓苗族定居史</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">500<span style="font-size:1rem;">+</span>户</div>
+          <div class="stat-label">👨‍👩‍👧‍👦 常住居民</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">90<span style="font-size:1rem;">%</span></div>
+          <div class="stat-label">🌲 森林覆盖率</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">80<span style="font-size:1rem;">株</span></div>
+          <div class="stat-label">🌳 百年以上古树</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">2000<span style="font-size:1rem;">+</span>亩</div>
+          <div class="stat-label">🌾 富硒稻田</div>
+        </div>
+      </div>
+
+      <!-- ── 一、地理区位与自然生态 ── -->
+      <div class="village-card">
+        <div class="vc-header">
+          <span class="vc-icon">🗺️</span>
+          <span class="vc-title">地理区位与自然生态</span>
+        </div>
+        <p>石垅溪村坐落于雪峰山余脉、西晃山北麓山腰地带，海拔约500米。西晃山素有麻阳"寿山"之称，也是麻阳八景之首"西晃晴云"的观赏区域。村庄西南毗邻芷江县，距离麻阳县城约28公里、怀化市区32公里、凤凰古城仅27公里，通村主干道全部水泥硬化，临近高速出入口，交通便利。</p>
+        <p>全村森林覆盖率超90%，负氧离子充沛，是天然山林康养氧吧。全域土壤天然富含硒元素，溪水常年流淌、山泉水源洁净，无工业污染。山间野生天麻、黄精、重楼、青风藤等中药材自然生长，田间溪流水塘密布，近年来政府多次在此开展水生生物增殖放流，构建稻田共生生态体系。</p>
+
+        <div class="village-highlight">
+          <div class="vh-title">🌳 炭家垅古树群 —— 县级古树名木保护公园</div>
+          <p>村内炭家垅自然村寨集中留存近<strong>80株百年以上古树</strong>，以枫香树为主，搭配楠木、香樟、金弹子等名贵树种。古树平均树龄<strong>130年以上</strong>，胸径60—150厘米，多数需三四人合围，部分两两相依被称作"夫妻古枫"。2019年被划定为县级古树名木保护公园，纳入国家森林乡村重点生态资源管护范围。</p>
+        </div>
+      </div>
+
+      <!-- ── 二、村落历史与民族风貌 ── -->
+      <div class="village-card">
+        <div class="vc-header">
+          <span class="vc-icon">📜</span>
+          <span class="vc-title">村落历史与民族风貌</span>
+        </div>
+        <p>村民主体以龙姓苗族为主，族谱可追溯至<strong>800余年前</strong>，先民迁徙至西晃山下择地定居，依山傍溪修建村寨，"石垅溪"村名便取自山间石质溪沟地貌。村内建有龙姓宗祠，是怀化西南片区龙氏苗族宗亲的聚集地。全村划分为4个村民小组，户籍人口以苗族占绝大多数，青壮年大多外出务工，常住以留守老人、妇女、儿童为主。</p>
+        <p>炭家垅古寨房屋全部顺应山势修建，保留湘西苗族传统<strong>木质吊脚楼、青瓦土墙老屋</strong>格局，木屋斑驳、青苔覆瓦，被山林古树环抱，原生态苗寨氛围浓厚。</p>
+      </div>
+
+      <!-- ── 三、苗族民俗与乡土文化 ── -->
+      <div class="village-card">
+        <div class="vc-header">
+          <span class="vc-icon">🎭</span>
+          <span class="vc-title">苗族民俗与乡土文化</span>
+        </div>
+        <p>依托千年苗族聚居历史，村内民俗保留完整、民风淳朴和睦。最独特的当属<strong>全村集体过大年</strong>：每到春节前夕，炭家垅数十户村民汇聚古树广场置办百家宴，自带食材分工下厨；饭后自编自导苗歌、山歌、民俗节目，在外返乡游子全员参与，以村寨为大家庭团聚，是村内最隆重的年度盛事。</p>
+        <p>日常保留熏腊肉、酿米酒、腌酸菜等湘西苗族饮食技艺。每逢腊月，全村人聚在百姓石坊合力打糍粑、磨米面、榨茶油。闲暇时节传唱苗族山歌、吹奏木叶调，婚嫁节庆保留竹竿舞、敬酒礼等原生态苗家礼仪。近年村民还自主打造了农耕记忆文化墙，悬挂蓑衣、斗笠、谷箩等老物件，成为返乡年轻人打卡地标。</p>
+      </div>
+
+      <!-- ── 四、特色主导产业 ── -->
+      <div class="village-card">
+        <div class="vc-header">
+          <span class="vc-icon">🌾</span>
+          <span class="vc-title">特色主导产业</span>
+        </div>
+        <p>石垅溪村是大桥江乡老牌产粮村，依托富硒水土，形成了粮油、林果、中药材三大稳定增收产业。</p>
+
+        <div class="industry-grid">
+          <div class="industry-item">
+            <div class="ind-icon">🌾</div>
+            <h4>富硒水稻</h4>
+            <p>稻田总面积<strong>两千余亩</strong>，几乎无耕地撂荒。2026年打造百亩富硒优质稻标准化示范基地，统一选种、集中育秧，搭配稻田养鱼生态种养模式，逐步打造村级富硒米品牌。</p>
+          </div>
+          <div class="industry-item">
+            <div class="ind-icon">🍇</div>
+            <h4>高山刺葡萄</h4>
+            <p>累计种植<strong>300余亩</strong>，全程不使用除草剂，只施农家有机肥，果品汁水浓郁。每年中秋前后采摘，一户3—5亩年收入可达2万元以上。</p>
+          </div>
+          <div class="industry-item">
+            <div class="ind-icon">💊</div>
+            <h4>中药材种植</h4>
+            <p>联合正清制药集团落地<strong>青风藤+高粱药间作</strong>党员示范田，实现一地双收。周边万亩天麻基地常年吸纳村民就近务工，获租金+务工双份收入。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── 五、基础设施建设 ── -->
+      <div class="village-card">
+        <div class="vc-header">
+          <span class="vc-icon">🏗️</span>
+          <span class="vc-title">基础设施建设与和美乡村</span>
+        </div>
+        <p>自脱贫攻坚衔接乡村振兴以来，通村通组公路全部水泥硬化，累计硬化田间沟渠1200余米，修建安全护栏2000米，修建花台40余处。建成村级综合文化休闲广场，配套标准化篮球场、乒乓球台、全套户外健身器材；设有便民超市、标准化村级卫生室，日常看病、生活采购、政务办事均可村内完成。</p>
+
+        <div class="village-highlight">
+          <div class="vh-title">🤝 "银发匠人"共建模式</div>
+          <p>村内推行<strong>农村物业自治 + 银发人才参与</strong>模式，退休老匠人、留守妇女主动投工投劳，累计义务投工1600余人次，自筹资金完善小微景观，不依赖大额外来资金，依靠村民共建打造宜居村寨，是大桥江乡和美乡村建设示范样本。</p>
+        </div>
+      </div>
+
+      <!-- ── 六、文旅与总结 ── -->
+      <div class="village-card">
+        <div class="vc-header">
+          <span class="vc-icon">🏞️</span>
+          <span class="vc-title">文旅定位与整体风貌</span>
+        </div>
+        <p>石垅溪村没有过度商业化开发，以<strong>原生态西晃山山水、百年古树群落、苗族古吊脚楼村寨、富硒田园风光</strong>四大资源为核心，主打近郊生态康养、农耕采摘、苗族民俗体验短途乡村旅游。距凤凰古城、怀化城区较近，逐步成为湘西小众静谧的乡村休闲目的地。</p>
+        <p style="text-indent: 0; font-weight: 600; color: #2E5A2E;">🏡 整体村落依山枕溪、古树环抱、良田连片，生态宜居、乡风和睦，是麻阳苗族山区依托生态资源稳步推进乡村振兴的典型村寨。</p>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ======== 项目简介 ======== -->
   <section class="section" style="background: var(--color-bg-alt); max-width: none;">
     <div style="max-width: var(--max-width); margin: 0 auto;">
