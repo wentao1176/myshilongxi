@@ -1,0 +1,201 @@
+================================================================================
+吊瓜病虫害识别结果
+模型: gianlab/swin-tiny-patch4-window7-224-finetuned-plantdisease
+识别时间: 2026-07-23 16:51:20
+样品数量: 21 张
+================================================================================
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155600_30_1.jpg
+识别结果: Tomato__Tomato_YellowLeaf__Curl_Virus
+置信度:   72.52%
+Top 3:
+  1. Tomato__Tomato_YellowLeaf__Curl_Virus         (72.5%)
+  2. Tomato_Leaf_Mold                              (12.2%)
+  3. Pepper__bell___Bacterial_spot                 (5.1%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155601_31_1.jpg
+识别结果: Tomato_Late_blight
+置信度:   24.44%
+Top 3:
+  1. Tomato_Late_blight                            (24.4%)
+  2. Potato___Early_blight                         (12.6%)
+  3. Tomato_Early_blight                           (11.9%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155602_32_1.jpg
+识别结果: Tomato_Late_blight
+置信度:   22.11%
+Top 3:
+  1. Tomato_Late_blight                            (22.1%)
+  2. Potato___Early_blight                         (21.0%)
+  3. Tomato__Tomato_YellowLeaf__Curl_Virus         (11.2%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155603_33_1.jpg
+识别结果: Tomato_Late_blight
+置信度:   22.91%
+Top 3:
+  1. Tomato_Late_blight                            (22.9%)
+  2. Potato___Early_blight                         (17.1%)
+  3. Tomato__Target_Spot                           (15.1%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155604_34_1.jpg
+识别结果: Potato___Early_blight
+置信度:   24.09%
+Top 3:
+  1. Potato___Early_blight                         (24.1%)
+  2. Tomato_Early_blight                           (24.0%)
+  3. Potato___Late_blight                          (10.3%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155605_35_1.jpg
+识别结果: Tomato_Leaf_Mold
+置信度:   53.31%
+Top 3:
+  1. Tomato_Leaf_Mold                              (53.3%)
+  2. Pepper__bell___Bacterial_spot                 (14.4%)
+  3. Tomato__Tomato_YellowLeaf__Curl_Virus         (7.4%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155606_36_1.jpg
+识别结果: Tomato_Leaf_Mold
+置信度:   37.20%
+Top 3:
+  1. Tomato_Leaf_Mold                              (37.2%)
+  2. Tomato_Septoria_leaf_spot                     (13.3%)
+  3. Tomato__Tomato_YellowLeaf__Curl_Virus         (13.1%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155607_37_1.jpg
+识别结果: Tomato_Leaf_Mold
+置信度:   25.65%
+Top 3:
+  1. Tomato_Leaf_Mold                              (25.7%)
+  2. Tomato__Tomato_YellowLeaf__Curl_Virus         (22.6%)
+  3. Tomato_Late_blight                            (19.4%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155607_38_1.jpg
+识别结果: Tomato__Tomato_YellowLeaf__Curl_Virus
+置信度:   18.41%
+Top 3:
+  1. Tomato__Tomato_YellowLeaf__Curl_Virus         (18.4%)
+  2. Tomato_Septoria_leaf_spot                     (13.8%)
+  3. Potato___Late_blight                          (11.0%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155609_39_1.jpg
+识别结果: Tomato__Tomato_YellowLeaf__Curl_Virus
+置信度:   24.02%
+Top 3:
+  1. Tomato__Tomato_YellowLeaf__Curl_Virus         (24.0%)
+  2. Pepper__bell___Bacterial_spot                 (21.7%)
+  3. Tomato_Leaf_Mold                              (18.7%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155611_40_1.jpg
+识别结果: Tomato_Early_blight
+置信度:   25.52%
+Top 3:
+  1. Tomato_Early_blight                           (25.5%)
+  2. Tomato_Late_blight                            (17.2%)
+  3. Tomato_Leaf_Mold                              (16.2%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155612_41_1.jpg
+识别结果: Potato___Late_blight
+置信度:   40.81%
+Top 3:
+  1. Potato___Late_blight                          (40.8%)
+  2. Tomato_Early_blight                           (12.9%)
+  3. Tomato_Late_blight                            (9.0%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155613_42_1.jpg
+识别结果: Potato___Late_blight
+置信度:   22.48%
+Top 3:
+  1. Potato___Late_blight                          (22.5%)
+  2. Potato___Early_blight                         (16.9%)
+  3. Tomato__Target_Spot                           (14.0%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155615_43_1.jpg
+识别结果: Tomato_Late_blight
+置信度:   30.07%
+Top 3:
+  1. Tomato_Late_blight                            (30.1%)
+  2. Tomato_Leaf_Mold                              (23.5%)
+  3. Tomato_Early_blight                           (18.5%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155617_44_1.jpg
+识别结果: Tomato_Septoria_leaf_spot
+置信度:   22.54%
+Top 3:
+  1. Tomato_Septoria_leaf_spot                     (22.5%)
+  2. Potato___Late_blight                          (19.6%)
+  3. Tomato_Late_blight                            (13.2%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155619_45_1.jpg
+识别结果: Tomato_Leaf_Mold
+置信度:   44.89%
+Top 3:
+  1. Tomato_Leaf_Mold                              (44.9%)
+  2. Tomato_Early_blight                           (20.0%)
+  3. Tomato_Late_blight                            (8.3%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155626_46_1.jpg
+识别结果: Tomato_Leaf_Mold
+置信度:   51.16%
+Top 3:
+  1. Tomato_Leaf_Mold                              (51.2%)
+  2. Tomato_Early_blight                           (13.1%)
+  3. Tomato_Late_blight                            (9.0%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155627_47_1.jpg
+识别结果: Tomato__Tomato_YellowLeaf__Curl_Virus
+置信度:   29.18%
+Top 3:
+  1. Tomato__Tomato_YellowLeaf__Curl_Virus         (29.2%)
+  2. Pepper__bell___Bacterial_spot                 (24.0%)
+  3. Tomato_Leaf_Mold                              (15.0%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155629_48_1.jpg
+识别结果: Tomato__Tomato_YellowLeaf__Curl_Virus
+置信度:   25.62%
+Top 3:
+  1. Tomato__Tomato_YellowLeaf__Curl_Virus         (25.6%)
+  2. Tomato_Leaf_Mold                              (17.8%)
+  3. Tomato_Early_blight                           (17.3%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155631_49_1.jpg
+识别结果: Tomato_Leaf_Mold
+置信度:   19.47%
+Top 3:
+  1. Tomato_Leaf_Mold                              (19.5%)
+  2. Tomato__Tomato_YellowLeaf__Curl_Virus         (18.9%)
+  3. Tomato_Early_blight                           (18.3%)
+
+────────────────────────────────────────────────────────────
+图片: 微信图片_20260723155632_50_1.jpg
+识别结果: Tomato_Leaf_Mold
+置信度:   23.65%
+Top 3:
+  1. Tomato_Leaf_Mold                              (23.6%)
+  2. Tomato_Septoria_leaf_spot                     (16.7%)
+  3. Tomato__Tomato_YellowLeaf__Curl_Virus         (11.8%)
+
+================================================================================
+说明：该模型基于PlantVillage数据集(38类植物病害)预训练，
+识别结果为模型认为最匹配的已知病害类别，仅供参考。
+吊瓜(栝楼)不在PlantVillage的14种作物中，结果需人工验证。
+================================================================================

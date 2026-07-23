@@ -1,0 +1,9 @@
+识别结果汇总
+────────────────────────────────────────────────────────────
+  Tomato_Leaf_Mold                             : 7张 (33%)
+  Tomato__Tomato_YellowLeaf__Curl_Virus        : 5张 (24%)
+  Tomato_Late_blight                           : 4张 (19%)
+  Potato___Late_blight                         : 2张 (10%)
+  Potato___Early_blight                        : 1张 (5%)
+  Tomato_Early_blight                          : 1张 (5%)
+  Tomato_Septoria_leaf_spot                    : 1张 (5%)
