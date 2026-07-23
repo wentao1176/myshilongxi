@@ -183,14 +183,20 @@
 
   <p style="text-indent: 0; font-weight: 600; color: #6A1B9A;">四天很短，但足够在一个孩子心里种下些什么。我们不知道石垅溪村的这些孩子将来会走到哪里，但我们知道，在这个夏天，有一群来自湖南大学的大哥哥大姐姐，陪他们度过了四个不寻常的下午。</p>
 
-  <h2>🎬 一日回顾</h2>
+  <h2>💻 下午：吊瓜病虫害AI识别探索</h2>
+  <p>送别孩子们之后，队员们没有闲下来，下午切换到了另一种"课堂"——利用专业知识，为石垅溪村的特色作物吊瓜（栝楼）做一次病虫害AI识别的技术探索。</p>
 
-  <div class="video-wrapper">
-    <video controls preload="none" playsinline style="display:block;width:100%;max-height:480px;">
-      <source src="../uploads/Day4%E7%BB%93%E8%AF%BE/pic/%E4%B8%80%E5%A4%A9%E6%80%BB%E7%BB%93vlog.mp4" type="video/mp4">
-      您的浏览器不支持视频播放，请<a href="../uploads/Day4%E7%BB%93%E8%AF%BE/pic/%E4%B8%80%E5%A4%A9%E6%80%BB%E7%BB%93vlog.mp4">点击下载</a>观看。
-    </video>
+  <p>队员们首先在网上检索吊瓜病虫害的相关科研论文，发现这一领域目前几乎是空白——针对吊瓜（栝楼）的病虫害图像识别研究，国内外都没有公开的成熟成果。但团队没有放弃：既然吊瓜属于葫芦科，那就从葫芦科近缘作物入手。经过文献检索，找到了一篇关于黄瓜病虫害叶片识别的研究，团队随即下载了对应的深度学习模型代码。</p>
+
+  <p>技术路线很清晰：用一个基于 Swin Transformer 的预训练模型（原模型在 PlantVillage 数据集上训练，覆盖38类植物病害、14种作物），将模型权重迁移过来，把原始训练数据替换成队员们实地采集的21张吊瓜叶片照片，让模型对这批吊瓜样本进行分类预测。</p>
+
+  <div class="highlight-box">
+    <p>🔬 模型：gianlab/swin-tiny-patch4-window7-224-finetuned-plantdisease<br>样品：21张吊瓜叶片实地照片 &nbsp;|&nbsp; 基准数据集：PlantVillage（38类病害）<br>⚠️ 吊瓜（栝楼）不在训练集的14种作物中，结论需人工复核验证。</p>
   </div>
+
+  <p>模型对21张吊瓜叶片样本的运行结果如下：主要识别为番茄叶霉病（Tomato Leaf Mold，7张/33%）、番茄黄化曲叶病毒病（Tomato Yellow Leaf Curl Virus，5张/24%）、番茄晚疫病（Tomato Late Blight，4张/19%），以及少量马铃薯晚疫病、早疫病和番茄早疫病、斑枯病等。需要说明的是，由于模型训练数据中并不包含吊瓜这一物种，这个结果反映的是"模型认为最像的已知病害"，而非对吊瓜真实病害的确诊——准确结论还需要农业专家结合田间实地观察来验证。</p>
+
+  <p>这次尝试虽然只是初步探索，但意义不小：它证明了迁移学习在地方特色作物病害识别上的可行性，也为后续积累更多吊瓜病害标注数据、训练专用模型开了个头。队员们将识别结果和代码留在了村里，希望这份小小的技术笔记，未来能对石垅溪村的吊瓜种植有些帮助。</p>
 
   <div class="tag-row">
     <span class="tag">🛡️ 校园霸凌教育</span>
@@ -200,7 +206,18 @@
     <span class="tag">🎨 橡皮泥创作</span>
     <span class="tag">💌 "辛苦了"</span>
     <span class="tag">📸 结课合影</span>
+    <span class="tag">💻 吊瓜AI识别</span>
   </div>
+
+  <h2>🎬 一日回顾</h2>
+
+  <div class="video-wrapper">
+    <video controls preload="none" playsinline style="display:block;width:100%;max-height:480px;">
+      <source src="../uploads/Day4%E7%BB%93%E8%AF%BE/pic/%E4%B8%80%E5%A4%A9%E6%80%BB%E7%BB%93vlog.mp4" type="video/mp4">
+      您的浏览器不支持视频播放，请<a href="../uploads/Day4%E7%BB%93%E8%AF%BE/pic/%E4%B8%80%E5%A4%A9%E6%80%BB%E7%BB%93vlog.mp4">点击下载</a>观看。
+    </video>
+  </div>
+
 
 </div>
 
