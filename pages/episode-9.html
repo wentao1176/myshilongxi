@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="麻阳苗乡暖心家园——一站式乡村公益服务与苗乡文化宣传平台">
+  <title>最后的足迹 · 团队风貌 · 麻阳苗乡暖心家园</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="../images/img.ico?v=2" type="image/x-icon">
+  <link rel="icon" href="../images/img.ico?v=2" type="image/x-icon">
+
+<style>
+  .episode-header {
+    background: linear-gradient(135deg, #7F0000 0%, #B71C1C 30%, #C62828 60%, #D32F2F 100%);
+    color: #fff; padding: 3.5rem 1.5rem;
+    text-align: center; position: relative; overflow: hidden;
+  }
+  .episode-header::before {
+    content: ''; position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5 L36 25 L56 25 L39 36 L45 56 L30 43 L15 56 L21 36 L4 25 L24 25 Z' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+  .episode-header .episode-badge {
+    position: relative; display: inline-block;
+    background: rgba(255,255,255,0.18); padding: 0.3rem 1.2rem;
+    border-radius: 20px; font-size: var(--font-xs); margin-bottom: 1rem;
+    backdrop-filter: blur(4px);
+  }
+  .episode-header h1 {
+    font-size: 2rem; margin: 0.5rem 0; position: relative;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.25); font-weight: 700;
+  }
+  .episode-header p { position: relative; text-shadow: 0 1px 6px rgba(0,0,0,0.2); }
+  .episode-header .episode-date { position: relative; opacity: 0.85; font-size: var(--font-sm); }
+
+  .content-section { max-width: var(--max-width); margin: 0 auto; padding: 2rem 1rem; }
+  .content-section h2 {
+    font-size: 1.4rem; margin: 2rem 0 0.75rem;
+    color: #B71C1C; border-left: 4px solid #E53935; padding-left: 1rem;
+  }
+  .content-section p { line-height: 2; font-size: var(--font-md); color: #444; text-indent: 2em; margin-bottom: 1rem; }
+
+  .highlight-box {
+    background: linear-gradient(135deg, #FFEBEE 0%, #FFF5F5 100%);
+    border-left: 4px solid #E53935; padding: 1.5rem;
+    border-radius: 0 12px 12px 0; margin: 1.5rem 0;
+  }
+  .highlight-box p { text-indent: 0; font-size: var(--font-md); color: #7F0000; margin: 0; }
+
+  .quote-box {
+    background: #FFEBEE; border-radius: 12px; padding: 1.5rem 2rem;
+    margin: 1.5rem 0; position: relative;
+  }
+  .quote-box::before {
+    content: '"'; position: absolute; top: -10px; left: 16px;
+    font-size: 3rem; color: #E53935; line-height: 1; font-family: Georgia, serif;
+  }
+  .quote-box p { text-indent: 0; color: #7F0000; font-style: italic; margin: 0; padding-top: 0.5rem; }
+
+  .tag-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; justify-content: center; }
+  .tag-row .tag {
+    background: #FFEBEE; color: #B71C1C; padding: 0.3rem 0.9rem;
+    border-radius: 14px; font-size: var(--font-sm); border: 1px solid #EF9A9A;
+  }
+
+  .video-wrapper {
+    position: relative; width: 100%; max-width: 800px; margin: 0 auto;
+    background: #000; border-radius: 12px; overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  }
+  .video-wrapper video { display: block; width: 100%; max-height: 480px; }
+
+  /* ── 创意照片展示 ── */
+  .polaroid-grid {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem 2rem;
+    margin: 2rem 0;
+  }
+  .polaroid {
+    background: #fff; padding: 0.6rem 0.6rem 2.2rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18), 0 1px 3px rgba(0,0,0,0.08);
+    border-radius: 3px; transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 320px;
+  }
+  .polaroid:hover { transform: scale(1.04) rotate(0deg) !important; box-shadow: 0 8px 28px rgba(0,0,0,0.25); z-index: 2; }
+  .polaroid.tilt-l { transform: rotate(-3deg); }
+  .polaroid.tilt-r { transform: rotate(2.5deg); }
+  .polaroid.tilt-m { transform: rotate(-1.5deg); }
+  .polaroid img {
+    display: block; width: 100%; border-radius: 1px;
+  }
+
+  /* ── 斜角画廊 ── */
+  .tilted-gallery {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  .tilted-frame {
+    background: #fff; padding: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border-radius: 4px; transition: transform 0.35s, box-shadow 0.35s;
+    max-width: 300px;
+  }
+  .tilted-frame:nth-child(odd) { transform: rotate(-2.5deg); }
+  .tilted-frame:nth-child(even) { transform: rotate(2deg); }
+  .tilted-frame:hover { transform: rotate(0deg) scale(1.05); box-shadow: 0 10px 32px rgba(0,0,0,0.28); z-index: 3; }
+  .tilted-frame img { display: block; width: 100%; border-radius: 2px; }
+
+  /* ── 翻转卡片 ── */
+  .flip-row {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem; margin: 2rem 0;
+  }
+  .flip-card {
+    perspective: 1000px; height: 280px; cursor: pointer;
+  }
+  .flip-card-inner {
+    position: relative; width: 100%; height: 100%;
+    transition: transform 0.6s; transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
+  .flip-card-front, .flip-card-back {
+    position: absolute; inset: 0; backface-visibility: hidden;
+    border-radius: 12px; overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  }
+  .flip-card-front img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .flip-card-back {
+    background: #B71C1C; color: #fff; transform: rotateY(180deg);
+    display: flex; flex-direction: column; align-items: center;
+    justify-content: center; padding: 1.5rem; text-align: center;
+  }
+  .flip-card-back .back-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+  .flip-card-back .back-text { font-size: var(--font-sm); line-height: 1.7; opacity: 0.92; }
+
+  /* ── 相框砌砖式 ── */
+  .masonry-grid {
+    column-count: 3; column-gap: 1rem; margin: 2rem 0;
+  }
+  .masonry-grid .masonry-item {
+    break-inside: avoid; margin-bottom: 1rem;
+    border-radius: 10px; overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.14);
+    background: #fff; padding: 5px;
+  }
+  .masonry-grid .masonry-item img { display: block; width: 100%; border-radius: 6px; }
+
+  /* ── 访谈卡 ── */
+  .interview-card {
+    background: #FFF5F5; border: 1px solid #FFCDD2; border-radius: 12px;
+    padding: 1.5rem; margin: 1.25rem 0;
+  }
+  .interview-card .q { font-weight: 700; color: #B71C1C; margin-bottom: 0.3rem; font-size: var(--font-md); }
+  .interview-card .a { color: #555; line-height: 1.8; font-size: var(--font-md); }
+
+  /* ── 双栏对比 ── */
+  .dual-col {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 1.5rem 0;
+  }
+
+  @media (max-width: 768px) {
+    .masonry-grid { column-count: 2; }
+    .dual-col { grid-template-columns: 1fr; }
+    .polaroid { max-width: 240px; }
+    .flip-row { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 480px) {
+    .masonry-grid { column-count: 1; }
+    .polaroid-grid { gap: 1rem; }
+  }
+</style>
+
+</head>
+<body>
+
+  <header class="top-header">
+    <a href="../index.html" class="header-logo">
+      <span class="logo-icon">🏠</span>
+      <span>苗乡暖心家园</span>
+    </a>
+    <button class="menu-toggle" aria-label="菜单">☰</button>
+    <nav class="header-nav">
+      <a href="../" >首页</a>
+      <a href="../miaoculture.html" >苗乡文化</a>
+      <a href="../scenery.html" >石垅风光</a>
+      <a href="../team-style.html" >团队风貌</a>
+    </nav>
+  </header>
+
+  <main>
+
+<div class="episode-header">
+  <div class="episode-badge">📺 第 8 期</div>
+  <h1>最后的足迹 · 红色传承与田野对话</h1>
+  <p style="margin-top: 1rem; opacity: 0.9; font-size: var(--font-md);">支教收官日——与旅居老人跨代对话，寻访湘西第一支部，再走一次吊瓜田埂。</p>
+  <div class="episode-date">2026-07-24</div>
+</div>
+
+<div class="breadcrumb" style="max-width: var(--max-width); margin: 0 auto; padding: 0 1rem;">
+  <a href="../index.html">首页</a> <span class="sep">›</span>
+  <a href="../team-style.html">团队风貌</a> <span class="sep">›</span>
+  <strong>最后的足迹 · 红色传承与田野对话</strong>
+</div>
+
+<div class="content-section">
+
+  <!-- ═══════════ Part 1: 旅居老人对话 ═══════════ -->
+  <h2>🏔️ 田妈山庄偶遇 —— 与旅居老人的跨代对话</h2>
+  <p>告别了四天的支教课堂，队员们来到了西晃山上的田妈山庄。这里海拔高、气温凉爽，是附近有名的避暑民宿。就在山庄的院子里，我们偶遇了两位正在纳凉的老人——一位78岁，一位80岁，精神矍铄，完全看不出是耄耋之年。</p>
+
+  <p>两位爷爷都来自湖南岳阳，每年夏天都要外出避暑两三个月，冬天则去广西北海避寒三个月，其余时间在岳阳生活。这不是普通的旅行，而是他们退休后坚持多年的生活方式——旅居养老。</p>
+
+  <div class="highlight-box">
+    <p>👴 周爷爷（78岁）：原岳阳机装厂机械技术工人，深耕机械行业，掌握两千余项实操基本功，熟悉数控机床与金属材料特性。<br>
+    🎖️ 同行老人（80岁）：原岳阳市公交公司职工，历任科长、副经理，退休时任党支部书记，八十年代入党，拥有四十余年党龄。</p>
+  </div>
+
+  <div class="quote-box">
+    <p>关于养生，我们没什么特别的——一切顺其自然。不刻意锻炼，不吃保健品，想吃肉就吃肉，想吃鱼就吃鱼。我们两个都没有三高，没有基础病，也很少吃药。</p>
+  </div>
+
+  <h3 style="font-size: 1.1rem; color: #B71C1C; margin: 1.5rem 0 0.5rem;">📋 旅居养老：一份来自田野的真实声音</h3>
+
+  <div class="interview-card">
+    <div class="q">🏡 如何选择民宿？</div>
+    <div class="a">两位老人偏好70元/天包吃住、月均2000元左右的民宿，退休金普遍3000-4000元，高价民宿难以承受。遇到满意的民宿会常年复住——"碰到合得来的、老板人好的，大家都高兴，每年都去。口碑比广告重要。"</div>
+  </div>
+
+  <div class="dual-col">
+    <div class="interview-card">
+      <div class="q">🚗 交通出行难题</div>
+      <div class="a">进山道路陡峭、路况差，去镇上采购水果日用品非常不便。"虽说有路上来，但路况很差。"好在当地已计划投入一千二百万修路——"要想富，先修路"，路修好了，避暑民宿产业就活了。</div>
+    </div>
+    <div class="interview-card">
+      <div class="q">🏥 医疗与体检</div>
+      <div class="a">村卫生所覆盖小病，大病需前往县城，恶劣路况耽误就医。免费基础体检参与度低，但高端检查项目（如核磁共振近千元）无法医保报销，建议增加可报销的深度体检项目。</div>
+    </div>
+  </div>
+
+  <div class="interview-card">
+    <div class="q">🚂 铁路购票困境</div>
+    <div class="a">12306放票瞬间被第三方平台抢占，平台加价售票。老年人不擅长线上抢票，多次去车站排队仍一票难求。老人建议：针对70岁以上老人开通线下购票登记通道，无票时登记需求、分批次分配。"老年人时间没那么急，但必须要有卧铺票，年龄大了坐高铁几个小时人还蛮累。"</div>
+  </div>
+
+  <div class="interview-card">
+    <div class="q">💡 对大学生的建议</div>
+    <div class="a">"相比三年读研，尽早进入行业积累实操经验更有价值。学一门技术是最靠得住的。"老人拿自己举例：两千多个基本功现在还在，靠的就是实打实的实践。任何行业都要讲究逻辑和程序——"七十二行，行行出状元。哪怕做最简单的事，也要认真，也要做得比别人好。"</div>
+  </div>
+
+  <div class="quote-box">
+    <p>我跟年轻人说话，自己就觉得自己还年轻。经历很复杂，社会经历、恋爱婚姻……都包括在里面。哈哈！</p>
+  </div>
+
+  <p style="text-indent: 0; font-weight: 600; color: #B71C1C;">一个多小时的聊天，从民宿经营聊到铁路改革，从机械制造聊到年轻人的就业选择。所谓田野调查，不只是一份份问卷——更是坐下来，认真听一段岁月的经验。</p>
+
+  <!-- ═══════════ Part 2: 再访吊瓜基地 ═══════════ -->
+  <h2>🌿 再访吊瓜基地 —— 用脚步丈量田野</h2>
+  <p>告别了两位爷爷，队员们再次踏进了石垅溪村的吊瓜种植基地。和上一次走访不同，这次大家更仔细地观察了每一株藤蔓的生长态势、每一片叶子的颜色与纹理——这些实地采集的照片，正是后续AI识别模型的"原材料"。</p>
+
+  <div class="tilted-gallery">
+    <div class="tilted-frame">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E4%B8%8B%E7%94%B0%E6%8B%8D%E6%91%841.jpg" alt="下田拍摄" loading="lazy">
+    </div>
+    <div class="tilted-frame">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E4%B8%8B%E7%94%B0%E6%8B%8D%E6%91%842.jpg" alt="下田拍摄" loading="lazy">
+    </div>
+    <div class="tilted-frame">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E4%B8%8B%E7%94%B0%E6%8B%8D%E6%91%843.jpg" alt="下田拍摄" loading="lazy">
+    </div>
+  </div>
+
+  <p>队员们在瓜棚间穿行，认真记录每一处叶片细节。叶子上的斑点、卷曲、褪色——这些在普通人眼里不起眼的痕迹，在计算机视觉的视角下，都可能成为判断病虫害的关键特征。</p>
+
+  <div class="polaroid-grid">
+    <div class="polaroid tilt-l">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%8F%B6%E5%AD%90%E7%85%A7%E7%89%871.jpg" alt="叶子照片" loading="lazy">
+    </div>
+    <div class="polaroid tilt-r">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%8F%B6%E5%AD%90%E7%85%A7%E7%89%872.jpg" alt="叶子照片" loading="lazy">
+    </div>
+    <div class="polaroid tilt-m">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%90%8A%E7%93%9C%E6%9E%9C%E5%AE%9E.jpg" alt="吊瓜果实" loading="lazy">
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <p>🌱 这些叶片标本和田间照片，是AI识别模型从零到一的起点。虽然上一次的迁移学习结果还需要专家复核，但每一张新照片都在为未来的吊瓜病虫害数据库添砖加瓦。从田间到代码，从算法到泥土——这就是属于计算机人的"论文写在祖国大地上"。</p>
+  </div>
+
+  <!-- ═══════════ Part 3: 湘西第一支部 ═══════════ -->
+  <h2>🚩 中共湘西第一支部 —— 寻访红色根脉</h2>
+  <p>下午，龙乡长亲自带领队员们实地考察中共湘西第一支部旧址。这里是湘西乃至整个沅水流域最早的中国共产党组织——1924年12月15日成立，距今已逾百年。支部早期骨干有陈佑奎、郭达显等革命先驱，其中陈佑奎于1921年经毛泽东同志介绍加入中国共产党。</p>
+
+  <p>走在青石板铺就的小路上，两旁的土墙屋舍保存着百年前的模样。墙体以本地泥土混合石灰、稻草手工夯筑而成——每一寸都是当年的痕迹。</p>
+
+  <!-- 郭达显故居区 -->
+  <h3 style="font-size: 1.1rem; color: #B71C1C; margin: 1.5rem 0 0.5rem;">🏠 郭达显烈士故居</h3>
+  <p>队员们首先来到了郭达显烈士的故居。当年，郭达显主动把自家房屋拿出来，用于发展党员、开展党课、召开地下党组织会议。大门上方"平民夜校"四个字赫然在目——那是发动底层老百姓、传播革命思想的地方。</p>
+
+  <div class="polaroid-grid">
+    <div class="polaroid tilt-l" style="max-width: 380px;">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E9%83%AD%E8%BE%BE%E6%98%BE%E7%83%88%E5%A3%AB%E6%95%85%E5%B1%85.jpeg" alt="郭达显烈士故居" loading="lazy">
+    </div>
+    <div class="polaroid tilt-r" style="max-width: 380px;">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%B9%B3%E6%B0%91%E5%A4%9C%E6%A0%A1.jpeg" alt="平民夜校" loading="lazy">
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <p>🏮 郭达显的孙子——一位79岁的爷爷——热情地接待了我们。他身体已不太硬朗，但讲起爷爷的旧事依然激动不已。走进故居的那一刻，历史的厚重感扑面而来：煤油灯、旧茶壶、老橱柜、高粱杆搭建的锅台……每一件老物件背后，都藏着一段地下党员风雨如晦的岁月。</p>
+  </div>
+
+  <div class="polaroid-grid">
+    <div class="polaroid tilt-m" style="max-width: 380px;">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E7%88%B7%E7%88%B7%E6%8F%8F%E8%BF%B0%E9%9B%95%E5%A1%91.jpeg" alt="爷爷描述雕塑" loading="lazy">
+    </div>
+    <div class="polaroid tilt-r" style="max-width: 380px;">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E6%95%85%E5%B1%85%E7%9A%84%E5%BA%8A.jpeg" alt="故居的床" loading="lazy">
+    </div>
+    <div class="polaroid tilt-l" style="max-width: 380px;">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E4%B9%A1%E9%95%BF%E5%B8%A6%E9%A2%86%E5%8F%82%E8%A7%82.jpg" alt="乡长带领参观" loading="lazy">
+    </div>
+  </div>
+
+  <p>爷爷领着队员们一间一间屋子地走，一段一段历史地讲。其中有一个箱子是郭达显本人的遗物——"这个箱子，"爷爷情绪激动地告诉我们，"是我爷爷用过的……"话到这里，声音微微颤抖，现场的队员们都安静了下来。一件旧木箱，承载的是跨越世纪的红色记忆。</p>
+
+  <!-- 文物展览厅 -->
+  <h3 style="font-size: 1.1rem; color: #B71C1C; margin: 1.5rem 0 0.5rem;">🏛️ 革命文物展览</h3>
+  <p>从故居出来，龙乡长又带大家走进了文物展览厅。展厅里陈列着大量革命年代的实物：当年使用的铜制器具、早期革命纲领文件、中山装、马鞭、草鞋编织工具……还有一个净重七斤的大刀——"我称过，"爷爷认真地说，"就是七斤，不是网上说的十斤。"</p>
+
+  <div class="masonry-grid">
+    <div class="masonry-item">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%B1%95%E8%A7%88%E5%8E%85.jpeg" alt="展览厅" loading="lazy">
+    </div>
+    <div class="masonry-item">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%B1%95%E8%A7%88%E5%8E%85%E5%8F%82%E8%A7%82.jpeg" alt="展览厅参观" loading="lazy">
+    </div>
+    <div class="masonry-item">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%B1%95%E8%A7%88%E5%8E%85%E9%87%8C%E9%9D%A27%E6%96%A4%E9%87%8D%E7%9A%84%E5%88%80.jpeg" alt="展览厅里面7斤重的刀" loading="lazy">
+    </div>
+    <div class="masonry-item">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%B1%95%E8%A7%88%E6%9F%9C%E7%9A%84%E6%97%A7%E8%A1%A3%E7%89%A9.jpeg" alt="展览柜的旧衣物" loading="lazy">
+    </div>
+    <div class="masonry-item">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%B1%95%E8%A7%88%E6%9F%9C%E7%9A%84%E7%94%9F%E6%B4%BB%E7%94%A8%E5%93%81.jpeg" alt="展览柜的生活用品" loading="lazy">
+    </div>
+    <div class="masonry-item">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%B1%95%E8%A7%88%E5%8E%85%E7%9A%84%E6%9E%AA%E6%A2%B0.jpeg" alt="展览厅的枪械" loading="lazy">
+    </div>
+  </div>
+
+  <p>展览厅里还陈列了当年使用的火绳枪、训练用手榴弹（复刻教具）、手工布鞋编织工具、以及由本地麻草和外地麻料编织的草鞋。衣物年代久远，褪色串色，但每一道折痕都诉说着物资匮乏年代的革命坚持。</p>
+
+  <!-- 翻转卡片：重点文物特写 -->
+  <div class="flip-row">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%B1%95%E8%A7%88%E5%8E%85%E9%87%8C%E9%9D%A27%E6%96%A4%E9%87%8D%E7%9A%84%E5%88%80.jpeg" alt="7斤重的大刀" loading="lazy">
+        </div>
+        <div class="flip-card-back">
+          <div class="back-icon">⚔️</div>
+          <div class="back-text">净重七斤的大刀<br>经桐油浸泡防腐处理<br>年代久远却不易烧坏<br>——当年武器匮乏<br>革命先烈凭此御敌</div>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%B1%95%E8%A7%88%E5%8E%85%E7%9A%84%E6%9E%AA%E6%A2%B0.jpeg" alt="展厅枪械" loading="lazy">
+        </div>
+        <div class="flip-card-back">
+          <div class="back-icon">🔫</div>
+          <div class="back-text">火绳枪与训练手榴弹<br>建国前革命武装的真实写照<br>如今国家强盛<br>早已不再倚靠老式兵器<br>但筚路蓝缕的历史不能忘</div>
+        </div>
+      </div>
+    </div>
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%B1%95%E8%A7%88%E6%9F%9C%E7%9A%84%E6%97%A7%E8%A1%A3%E7%89%A9.jpeg" alt="旧衣物" loading="lazy">
+        </div>
+        <div class="flip-card-back">
+          <div class="back-icon">🧥</div>
+          <div class="back-text">中山装与布鞋<br>当年革命者统一穿着<br>衣物褪色串色<br>草鞋靠纯手工编织<br>——"过去物资匮乏"<br>六个字道尽百年沧桑</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 各时期党组织发展图 -->
+  <div class="polaroid-grid">
+    <div class="polaroid tilt-l" style="max-width: 420px;">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%90%84%E6%97%B6%E6%9C%9F%E5%85%9A%E7%BB%84%E7%BB%87%E5%8A%9B%E9%87%8F%E5%8F%91%E5%B1%95%E5%9B%BE.jpeg" alt="各时期党组织力量发展图" loading="lazy">
+    </div>
+    <div class="polaroid tilt-r" style="max-width: 420px;">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E4%B8%AD%E5%85%B1%E6%B9%98%E8%A5%BF%E7%AC%AC%E4%B8%80%E6%94%AF%E9%83%A8%E7%89%8C%E5%AD%90.jpeg" alt="中共湘西第一支部牌子" loading="lazy">
+    </div>
+  </div>
+
+  <p>讲解中我们了解到，当年地下党开会时，会安排专人在小路放哨，以防国民党特务抓捕。选择在这个偏僻的山村建立党支部，正是为了隐蔽。许多革命先辈二十多岁就牺牲了——他们的事迹，今天提起的人已经不多了。</p>
+
+  <div class="highlight-box">
+    <p>📍 中共湘西第一支部：1924年12月15日成立，是大湘西、沅水流域最早的中共党组织。支部早期骨干陈佑奎于1921年经毛泽东同志介绍入党，孙家兴等同志由陈佑奎介绍入党——一代代发展，队伍慢慢壮大。如今这里专门打造了党建讲堂，每年七一、八一，各单位都会组织主题教育活动前来学习。</p>
+  </div>
+
+  <p>爷爷告诉我们，以前没有通车的时候，进出全靠走山路，单程就要半天，来回一整天。"当年地下党工作实在太辛苦了。"队员们走在盘旋山路上，虽然如今路面已经硬化，但依然能感受到选址之隐蔽、坚持之不易。</p>
+
+  <!-- 合影 -->
+  <div class="polaroid-grid">
+    <div class="polaroid tilt-m" style="max-width: 460px;">
+      <img src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E5%90%88%E5%BD%B1.jpg" alt="合影" loading="lazy">
+    </div>
+  </div>
+
+  <div class="quote-box">
+    <p>作为革命先辈后人，我一直跟着共产党员一起做相关工作。我没有借着这个身份去拍广告牟利——就是传承发扬革命先烈的精神风貌。</p>
+    <p style="text-align: right; color: #7F0000; font-style: normal; margin-top: 0.5rem;">——郭达显之孙，79岁</p>
+  </div>
+
+  <div class="tag-row">
+    <span class="tag">🧓 旅居老人访谈</span>
+    <span class="tag">🏡 田妈山庄</span>
+    <span class="tag">🌿 吊瓜基地再访</span>
+    <span class="tag">🚩 中共湘西第一支部</span>
+    <span class="tag">🏠 郭达显烈士故居</span>
+    <span class="tag">🏛️ 革命文物展览</span>
+    <span class="tag">⚔️ 七斤大刀</span>
+    <span class="tag">📸 红色传承</span>
+  </div>
+
+  <!-- ═══════════ 总结视频 ═══════════ -->
+  <h2>🎬 最后一日 · 全程回顾</h2>
+
+  <div class="video-wrapper">
+    <video controls preload="none" playsinline style="display:block;width:100%;max-height:480px;">
+      <source src="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E6%80%BB%E7%BB%93%E8%A7%86%E9%A2%91.mp4" type="video/mp4">
+      您的浏览器不支持视频播放，请<a href="../uploads/%E6%9C%80%E5%90%8E%E4%B8%80%E5%A4%A9/pic/%E6%80%BB%E7%BB%93%E8%A7%86%E9%A2%91.mp4">点击下载</a>观看。
+    </video>
+  </div>
+
+  <p style="text-indent: 0; font-weight: 600; color: #B71C1C; text-align: center; margin-top: 2rem;">从支教课堂到田间地头，从旅居老人到革命旧址——最后一天，我们用不同的方式，和石垅溪村作了一次最深情的告别。</p>
+
+</div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand">🏡 麻阳苗乡暖心家园</div>
+    <p>多彩麻阳 · 同心家园 · 大桥江乡 · 石垅溪村</p>
+    <div class="footer-links">
+      <a href="../index.html">首页</a>
+      <a href="../miaoculture.html">苗乡文化</a>
+      <a href="../scenery.html">石垅风光</a>
+      <a href="../team-style.html">团队风貌</a>
+    </div>
+    <p style="margin-top: 1rem; opacity: 0.6;">&copy; 2026 三下乡社会实践团队 · 麻阳苗乡暖心家园公益项目</p>
+  </footer>
+
+  <button class="font-size-toggle" title="切换大字体" aria-label="切换大字体">A+</button>
+  <button class="scroll-top-btn" title="回到顶部" aria-label="回到顶部">⬆</button>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
